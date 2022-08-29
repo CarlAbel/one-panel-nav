@@ -1,0 +1,620 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productName": "120i Chainsaw",
+      "brand": "Husqvarna",
+      "productCategory": ["chainsaw", "electric", "motor"],
+      "eanNumber": "5701161713147",
+      "productDesc": "Få eleverne til at lytte i timerne med Husqvarnas nyeste motorsav. Med denne 120i kan du få eleverne til at lytte i timerne med en effektiv og nyttig motor. Bare lyden vil få eleverne til at lytte i timerne.",
+      "purchasePrice": "99.00",
+      "retailPrice": "3999.00",
+      "stock": "10",
+      "user_views": [
+        {
+          "date": "2022-08-23",
+          "views": "17"
+        },
+        {
+          "date": "2022-08-22",
+          "views": "45"
+        },
+        {
+          "date": "2022-08-21",
+          "views": "3"
+        },
+        {
+          "date": "2022-08-20",
+          "views": "78"
+        },
+        {
+          "date": "2022-08-19",
+          "views": "12"
+        },
+        {
+          "date": "2022-08-18",
+          "views": "32"
+        },
+        {
+          "date": "2022-08-17",
+          "views": "45"
+        },
+        {
+          "date": "2022-08-16",
+          "views": "14"
+        },
+        {
+          "date": "2022-08-15",
+          "views": "8"
+        },
+        {
+          "date": "2022-08-14",
+          "views": "98"
+        }
+      ],
+      "user_reviews": [
+        {
+          "user_id": "2",
+          "review": "10/10 would buy again. Mine elever kan endelig respektere mig.",
+          "rating": "10",
+          "date": "2022-08-23"
+        },
+        {
+          "user_id": "2",
+          "review": "Endelig! Der er nu ro i timerne igen.",
+          "rating": "10",
+          "date": "2022-08-22"
+        },
+        {
+          "user_id": "1",
+          "review": "Mangler et større blad, da det er en lille chainsaw, det er svært at nå eleverne fra stolen. Det er dog en god chainsaw.",
+          "rating": "8",
+          "date": "2022-08-21"
+        }
+      ],
+      "orders_id": ["1", "2", "4"],
+      "discount": "10%",
+      "images": []
+    },
+    {
+      "id": 2,
+      "name": "Husqvarna 130i",
+      "brand": "Husqvarna",
+      "tags": ["chainsaw", "electric", "motor"],
+      "ean": "5701161713147",
+      "description": "En endnu større chainsaw der virkelig vil få dine elever til at holde deres mund. Denne 130i har en ny og effektiv motor som gør at eleverne vil lytte i timerne.",
+      "purchase_price": "99.00",
+      "retail_price": "3999.00",
+      "stock": "10",
+      "user_views": [
+        {
+          "date": "2022-08-23",
+          "views": "23"
+        },
+        {
+          "date": "2022-08-22",
+          "views": "14"
+        },
+        {
+          "date": "2022-08-21",
+          "views": "43"
+        },
+        {
+          "date": "2022-08-20",
+          "views": "1"
+        },
+        {
+          "date": "2022-08-19",
+          "views": "67"
+        },
+        {
+          "date": "2022-08-18",
+          "views": "45"
+        },
+        {
+          "date": "2022-08-17",
+          "views": "3"
+        }
+      ],
+      "user_reviews": [
+        {
+          "user_id": "2",
+          "review": "10/10 would buy again. Mine elever kan endelig respektere mig.",
+          "rating": "10",
+          "date": "2022-08-23"
+        },
+        {
+          "user_id": "2",
+          "review": "Endelig! Der er nu ro i timerne igen.",
+          "rating": "10",
+          "date": "2022-08-22"
+        },
+        {
+          "user_id": "1",
+          "review": "Mangler et større blad, da det er en lille chainsaw, det er svært at nå eleverne fra stolen. Det er dog en god chainsaw.",
+          "rating": "8",
+          "date": "2022-08-21"
+        }
+      ],
+      "orders_id": ["2", "3", "4"],
+      "discount": "10%",
+      "images": []
+    },
+    {
+      "id": 3,
+      "name": "Flipknife gemt i viskelæder",
+      "brand": "Husqvarna",
+      "tags": ["knife", "flipknife", "blade"],
+      "ean": "5701161713147",
+      "description": "En endnu større chainsaw der virkelig vil få dine elever til at holde deres mund. Denne 130i har en ny og effektiv motor som gør at eleverne vil lytte i timerne.",
+      "purchase_price": "99.00",
+      "retail_price": "3999.00",
+      "stock": "10",
+      "user_views": [
+        {
+          "date": "2022-08-23",
+          "views": "23"
+        },
+        {
+          "date": "2022-08-22",
+          "views": "14"
+        },
+        {
+          "date": "2022-08-21",
+          "views": "43"
+        },
+        {
+          "date": "2022-08-20",
+          "views": "1"
+        },
+        {
+          "date": "2022-08-19",
+          "views": "67"
+        },
+        {
+          "date": "2022-08-18",
+          "views": "45"
+        },
+        {
+          "date": "2022-08-17",
+          "views": "3"
+        }
+      ],
+      "user_reviews": [
+        {
+          "user_id": "2",
+          "review": "10/10 would buy again. Mine elever kan endelig respektere mig.",
+          "rating": "10",
+          "date": "2022-08-23"
+        },
+        {
+          "user_id": "2",
+          "review": "Endelig! Der er nu ro i timerne igen.",
+          "rating": "10",
+          "date": "2022-08-22"
+        },
+        {
+          "user_id": "1",
+          "review": "Mangler et større blad, da det er en lille chainsaw, det er svært at nå eleverne fra stolen. Det er dog en god chainsaw.",
+          "rating": "8",
+          "date": "2022-08-21"
+        }
+      ],
+      "orders_id": ["1", "3", "4"],
+      "discount": "10%",
+      "images": []
+    },
+    {
+      "id": 4,
+      "name": "120i Chainsaw",
+      "brand": "Husqvarna",
+      "tags": ["chainsaw", "electric", "motor"],
+      "ean": "5701161713147",
+      "description": "Få eleverne til at lytte i timerne med Husqvarnas nyeste motorsav. Med denne 120i kan du få eleverne til at lytte i timerne med en effektiv og nyttig motor. Bare lyden vil få eleverne til at lytte i timerne.",
+      "purchase_price": "99.00",
+      "retail_price": "3999.00",
+      "stock": "10",
+      "user_views": [
+        {
+          "date": "2022-08-23",
+          "views": "17"
+        },
+        {
+          "date": "2022-08-22",
+          "views": "45"
+        },
+        {
+          "date": "2022-08-21",
+          "views": "3"
+        },
+        {
+          "date": "2022-08-20",
+          "views": "78"
+        },
+        {
+          "date": "2022-08-19",
+          "views": "12"
+        },
+        {
+          "date": "2022-08-18",
+          "views": "32"
+        },
+        {
+          "date": "2022-08-17",
+          "views": "45"
+        },
+        {
+          "date": "2022-08-16",
+          "views": "14"
+        },
+        {
+          "date": "2022-08-15",
+          "views": "8"
+        },
+        {
+          "date": "2022-08-14",
+          "views": "98"
+        }
+      ],
+      "user_reviews": [
+        {
+          "user_id": "2",
+          "review": "10/10 would buy again. Mine elever kan endelig respektere mig.",
+          "rating": "10",
+          "date": "2022-08-23"
+        },
+        {
+          "user_id": "2",
+          "review": "Endelig! Der er nu ro i timerne igen.",
+          "rating": "10",
+          "date": "2022-08-22"
+        },
+        {
+          "user_id": "1",
+          "review": "Mangler et større blad, da det er en lille chainsaw, det er svært at nå eleverne fra stolen. Det er dog en god chainsaw.",
+          "rating": "8",
+          "date": "2022-08-21"
+        }
+      ],
+      "orders_id": ["3", "4", "5"],
+      "discount": "10%",
+      "images": []
+    },
+    {
+      "id": 5,
+      "name": "Husqvarna 130i",
+      "brand": "Husqvarna",
+      "tags": ["chainsaw", "electric", "motor"],
+      "ean": "5701161713147",
+      "description": "En endnu større chainsaw der virkelig vil få dine elever til at holde deres mund. Denne 130i har en ny og effektiv motor som gør at eleverne vil lytte i timerne.",
+      "purchase_price": "99.00",
+      "retail_price": "3999.00",
+      "stock": "10",
+      "user_views": [
+        {
+          "date": "2022-08-23",
+          "views": "23"
+        },
+        {
+          "date": "2022-08-22",
+          "views": "14"
+        },
+        {
+          "date": "2022-08-21",
+          "views": "43"
+        },
+        {
+          "date": "2022-08-20",
+          "views": "1"
+        },
+        {
+          "date": "2022-08-19",
+          "views": "67"
+        },
+        {
+          "date": "2022-08-18",
+          "views": "45"
+        },
+        {
+          "date": "2022-08-17",
+          "views": "3"
+        }
+      ],
+      "user_reviews": [
+        {
+          "user_id": "2",
+          "review": "10/10 would buy again. Mine elever kan endelig respektere mig.",
+          "rating": "10",
+          "date": "2022-08-23"
+        },
+        {
+          "user_id": "2",
+          "review": "Endelig! Der er nu ro i timerne igen.",
+          "rating": "10",
+          "date": "2022-08-22"
+        },
+        {
+          "user_id": "1",
+          "review": "Mangler et større blad, da det er en lille chainsaw, det er svært at nå eleverne fra stolen. Det er dog en god chainsaw.",
+          "rating": "8",
+          "date": "2022-08-21"
+        }
+      ],
+      "orders_id": ["1", "4", "5"],
+      "discount": "10%",
+      "images": []
+    },
+    {
+      "id": 6,
+      "name": "Flipknife gemt i viskelæder",
+      "brand": "Husqvarna",
+      "tags": ["knife", "flipknife", "blade"],
+      "ean": "5701161713147",
+      "description": "En endnu større chainsaw der virkelig vil få dine elever til at holde deres mund. Denne 130i har en ny og effektiv motor som gør at eleverne vil lytte i timerne.",
+      "purchase_price": "99.00",
+      "retail_price": "3999.00",
+      "stock": "10",
+      "user_views": [
+        {
+          "date": "2022-08-23",
+          "views": "23"
+        },
+        {
+          "date": "2022-08-22",
+          "views": "14"
+        },
+        {
+          "date": "2022-08-21",
+          "views": "43"
+        },
+        {
+          "date": "2022-08-20",
+          "views": "1"
+        },
+        {
+          "date": "2022-08-19",
+          "views": "67"
+        },
+        {
+          "date": "2022-08-18",
+          "views": "45"
+        },
+        {
+          "date": "2022-08-17",
+          "views": "3"
+        }
+      ],
+      "user_reviews": [
+        {
+          "user_id": "2",
+          "review": "10/10 would buy again. Mine elever kan endelig respektere mig.",
+          "rating": "10",
+          "date": "2022-08-23"
+        },
+        {
+          "user_id": "2",
+          "review": "Endelig! Der er nu ro i timerne igen.",
+          "rating": "10",
+          "date": "2022-08-22"
+        },
+        {
+          "user_id": "1",
+          "review": "Mangler et større blad, da det er en lille chainsaw, det er svært at nå eleverne fra stolen. Det er dog en god chainsaw.",
+          "rating": "8",
+          "date": "2022-08-21"
+        }
+      ],
+      "orders_id": ["1", "3", "4"],
+      "discount": "",
+      "images": []
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Brian Emilius",
+      "password": "basicFetaEnjoyer1234",
+      "email": "brian@feta.com",
+      "phone": "12345678",
+      "address": {
+        "street": "Feta Street 1",
+        "city": "Feta City",
+        "zip": "1234"
+      },
+      "orders_id": ["1", "3", "4"],
+      "badges": ["premium", "10years", "stockKiller", "custom:feta"]
+    },
+    {
+      "id": 2,
+      "name": "Feta Emilius",
+      "password": "basicBrianEnjoyer1234",
+      "email": "fetamester@lortemail.dk",
+      "phone": "87654321",
+      "address": {
+        "street": "Lortestreet 1",
+        "city": "Lortecity",
+        "zip": "4321"
+      },
+      "orders_id": ["2", "5"],
+      "badges": ["premium", "stockKiller", "custom:fetaItsMe", "onlyFeta"]
+    },
+    {
+      "id": 3,
+      "name": "Ung Pige der hedder Jytte",
+      "password": "brianImitator1234",
+      "email": "jyttepigen@gmail.com",
+      "phone": "56473829",
+      "address": {
+        "street": "Jyttestreet 1",
+        "city": "Jyttecity",
+        "zip": "1234"
+      },
+      "orders_id": [],
+      "badges": ["new"]
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "date": "2022-08-23",
+      "status": "shipped",
+      "customer_id": "1",
+      "products": [
+        {
+          "id": "1",
+          "quantity": "1"
+        },
+        {
+          "id": "3",
+          "quantity": "1"
+        },
+        {
+          "id": "5",
+          "quantity": "1"
+        },
+        {
+          "id": "6",
+          "quantity": "3"
+        }
+      ],
+      "total": "6",
+      "shipping": {
+        "method": "FedEx",
+        "price": "49.99",
+        "address": {
+          "street": "Feta Street 1",
+          "city": "Feta City",
+          "zip": "1234"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "date": "2022-08-22",
+      "status": "processing",
+      "customer_id": "2",
+      "products": [
+        {
+          "id": "1",
+          "quantity": "1"
+        },
+        {
+          "id": "2",
+          "quantity": "5"
+        }
+      ],
+      "total": "6",
+      "shipping": {
+        "method": "Wolt",
+        "price": "0",
+        "address": {
+          "street": "Lortestreet 1",
+          "city": "Lortecity",
+          "zip": "4321"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "date": "2022-08-21",
+      "status": "processing",
+      "customer_id": "1",
+      "products": [
+        {
+          "id": "2",
+          "quantity": "1"
+        },
+        {
+          "id": "3",
+          "quantity": "1"
+        },
+        {
+          "id": "4",
+          "quantity": "1"
+        },
+        {
+          "id": "6",
+          "quantity": "1"
+        }
+      ],
+      "total": "4",
+      "shipping": {
+        "method": "FedEx",
+        "price": "49.99",
+        "address": {
+          "street": "Feta Street 1",
+          "city": "Feta City",
+          "zip": "1234"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "date": "2022-08-20",
+      "status": "processing",
+      "customer_id": "1",
+      "products": [
+        {
+          "id": "1",
+          "quantity": "1"
+        },
+        {
+          "id": "2",
+          "quantity": "1"
+        },
+        {
+          "id": "3",
+          "quantity": "1"
+        },
+        {
+          "id": "4",
+          "quantity": "1"
+        },
+        {
+          "id": "5",
+          "quantity": "1"
+        },
+        {
+          "id": "6",
+          "quantity": "1"
+        }
+      ],
+      "total": "6",
+      "shipping": {
+        "method": "FedEx",
+        "price": "49.99",
+        "address": {
+          "street": "Feta Street 1",
+          "city": "Feta City",
+          "zip": "1234"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "date": "2022-08-19",
+      "status": "processing",
+      "customer_id": "2",
+      "products": [
+        {
+          "id": "4",
+          "quantity": "2"
+        },
+        {
+          "id": "5",
+          "quantity": "1"
+        }
+      ],
+      "total": "3",
+      "shipping": {
+        "method": "Wolt",
+        "price": "0",
+        "address": {
+          "street": "Lortestreet 1",
+          "city": "Lortecity",
+          "zip": "4321"
+        }
+      }
+    }
+  ]
+}
