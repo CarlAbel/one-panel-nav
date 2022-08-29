@@ -3,11 +3,11 @@ import React from "react";
 import { AnimatePresence, motion, useCycle } from "framer-motion";
 
 const links = [
-  { name: "Home", to: "/Home.js", id: 1 },
-  { name: "Order History", to: "/OrderHistory.js", id: 2 },
-  { name: "Messages", to: "/Messages.js", id: 3 },
-  { name: "Products", to: "/Products.js", id: 4 },
-  { name: "Customers", to: "/Customers.js", id: 5 },
+  { name: "Home", to: "/", id: 1 },
+  { name: "Order History", to: "/orderHistory", id: 2 },
+  { name: "Messages", to: "/messages", id: 3 },
+  { name: "Products", to: "/products", id: 4 },
+  { name: "Customers", to: "/customers", id: 5 },
 ];
 
 const itemVariants = {
