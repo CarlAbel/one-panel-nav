@@ -2,14 +2,14 @@
   "products": [
     {
       "id": 1,
-      "productName": "120i Chainsaw",
-      "brand": "Husqvarna",
-      "productCategory": ["chainsaw", "electric", "motor"],
+      "productName": "Iphone 12",
+      "brand": "Apple",
+      "productCategory": ["phone", "electric", "wifi"],
       "eanNumber": "5701161713147",
-      "productDesc": "Få eleverne til at lytte i timerne med Husqvarnas nyeste motorsav. Med denne 120i kan du få eleverne til at lytte i timerne med en effektiv og nyttig motor. Bare lyden vil få eleverne til at lytte i timerne.",
-      "purchasePrice": "99.00",
-      "retailPrice": "3999.00",
-      "stock": "10",
+      "productDesc": "The newest version Iphone 13 from the manufactorer Apple.",
+      "purchasePrice": "455.00",
+      "retailPrice": "895.00",
+      "stock": "99+",
       "user_views": [
         {
           "date": "2022-08-23",
@@ -78,13 +78,13 @@
     },
     {
       "id": 2,
-      "name": "Husqvarna 130i",
-      "brand": "Husqvarna",
-      "tags": ["chainsaw", "electric", "motor"],
+      "name": "Iphone 11",
+      "brand": "Apple",
+      "tags": ["phone", "electric", "wifi"],
       "ean": "5701161713147",
       "description": "En endnu større chainsaw der virkelig vil få dine elever til at holde deres mund. Denne 130i har en ny og effektiv motor som gør at eleverne vil lytte i timerne.",
-      "purchase_price": "99.00",
-      "retail_price": "3999.00",
+      "purchase_price": "355.00",
+      "retail_price": "795.00",
       "stock": "10",
       "user_views": [
         {
