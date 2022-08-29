@@ -42,7 +42,7 @@ export default function BurgerNav() {
           <motion.aside
             initial={{ width: 0 }}
             animate={{
-              width: 300,
+              width: 260,
             }}
             exit={{
               width: 0,
