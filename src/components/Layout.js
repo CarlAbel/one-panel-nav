@@ -4,8 +4,8 @@ import BurgerNav from "./BurgerNav";
 export default function Layout() {
   return (
     <div>
+      <BurgerNav />
       <main>
-        <BurgerNav />
         <Outlet />
       </main>
     </div>

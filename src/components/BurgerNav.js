@@ -8,6 +8,7 @@ const links = [
   { name: "Messages", to: "/messages", id: 3 },
   { name: "Products", to: "/products", id: 4 },
   { name: "Customers", to: "/customers", id: 5 },
+  { name: "Sign In", to: "/signIn", id: 6 },
 ];
 
 const itemVariants = {
