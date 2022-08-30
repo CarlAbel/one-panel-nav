@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Layout from "./components/Layout";
+import TokenContext from "./context/TokenContext";
 import Customers from "./pages/Customers";
 import Home from "./pages/Home";
 import Messages from "./pages/Messages";
@@ -9,8 +10,10 @@ import OrderHistory from "./pages/OrderHistory";
 import Products from "./pages/Products";
 
 function App() {
+  const [token, setToken] = useState(null);
+
   return (
-    <>
+    <TokenContext.Provider value={{ token, setToken }}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -22,7 +25,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-    </>
+    </TokenContext.Provider>
   );
 }
 
