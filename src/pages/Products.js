@@ -1,8 +1,9 @@
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import TokenContext from "../context/TokenContext";
 
 export default function Products() {
   const [products, setProducts] = useState([]);
+
   const { token } = useContext(TokenContext);
 
   useEffect(function () {
@@ -12,40 +13,32 @@ export default function Products() {
       },
     })
       .then((res) => res.json())
+
       .then((data) => setProducts(data));
   }, []);
-
   return (
-    <>
+    <div>
+      <h1>Products</h1>
+
       <article>
         {products.map((product) => (
-          <h2>{product.productName}</h2>
+          <p className="text-white">{product.eanNumber}</p>
         ))}
-        {/* <div className="">
-          <h2>Ean-number: {eanNumber}</h2>
-          <p>Product-added: {productAdded} </p>
-          <img>{customer_Id}</img>
-        </div>
-        <div>
-          <img>{productImage}</img>
-          <li className="">
-            <h3>
-              Product: {brand} {productName}
-            </h3>
-            <p>Product category: {productCategory}</p>
-            <p>Product desc: {productDesc}</p>
-          </li>
-          <button onClick={edit}></button>
-        </div>
-        <div>
-          <p>Purchase price: {purchasePrice}</p>
-          <p>Retail price: {retailPrice}</p>
-        </div> */}
-      </article>
+        <p>DATE ADDED</p>
 
-      <div className="h-8 w-8 bg-slate-100">
-        <h1 className="text-white">Products</h1>
-      </div>
-    </>
+        {products.map((product) => (
+          <li className="text-white">{product.productName} Product Name: </li>
+        ))}
+
+        <i>Line</i>
+        {products.map((product) => (
+          <h1 className="text-white">{product.productName} Product Name: </h1>
+        ))}
+
+        {products.map((product) => (
+          <p className="text-white">{product.brand}</p>
+        ))}
+      </article>
+    </div>
   );
 }

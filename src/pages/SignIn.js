@@ -40,7 +40,9 @@ export default function SignIn() {
         </label>
       </div>
 
-      <button type="submit">Sign in</button>
+      <button className="text-white" type="submit">
+        Sign in
+      </button>
     </form>
   );
 }

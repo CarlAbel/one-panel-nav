@@ -1,7 +1,7 @@
 import "../styles.css";
 import React from "react";
 import { AnimatePresence, motion, useCycle } from "framer-motion";
-
+import { Link } from "react-router-dom";
 const links = [
   { name: "Home", to: "/", id: 1 },
   { name: "Order History", to: "/orderHistory", id: 2 },
