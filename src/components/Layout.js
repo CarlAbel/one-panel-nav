@@ -1,6 +1,8 @@
 import { Link, Outlet } from "react-router-dom"
 import "../styles.css"
 import { AnimatePresence, motion, useCycle } from "framer-motion"
+import TokenContext from "../context/TokenContext"
+import { useContext } from "react"
 
 const itemVariants = {
   closed: {
@@ -24,10 +26,12 @@ const sideVariants = {
   },
 }
 export default function Layout() {
+  const { token } = useContext(TokenContext)
+
   const [open, cycleOpen] = useCycle(false, true)
 
   return (
-    <div className="bg-primary-100">
+    <div className="bg-primary-400">
       <AnimatePresence>
         {open && (
           <motion.menu
