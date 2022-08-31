@@ -1,6 +1,6 @@
 import { useEffect, useState, useContext } from "react"
 import TokenContext from "../context/TokenContext"
-import FeatherIcon from "feather-icons-react"
+
 export default function Products() {
   const [products, setProducts] = useState([])
 
@@ -15,7 +15,7 @@ export default function Products() {
       .then((res) => res.json())
 
       .then((data) => setProducts(data))
-  })
+  }, [])
   return (
     <div className="bg-primary-100">
       <div className="flex flex-col">
