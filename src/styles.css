@@ -1,5 +1,7 @@
 .container {
-  margin: 4.5rem 1.4rem;
+  background-color: #d9d9d990;
+  position: fixed;
+  top: 0;
 }
 
 .btn-container {
