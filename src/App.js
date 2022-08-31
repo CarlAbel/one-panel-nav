@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from "react"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
-import Layout from "./components/Layout";
-import TokenContext from "./context/TokenContext";
-import Customers from "./pages/Customers";
-import Home from "./pages/Home";
-import Messages from "./pages/Messages";
-import OrderHistory from "./pages/OrderHistory";
-import Products from "./pages/Products";
-import SignIn from "./pages/SignIn";
+import Layout from "./components/Layout"
+import TokenContext from "./context/TokenContext"
+import Customers from "./pages/Customers"
+import Home from "./pages/Home"
+import Messages from "./pages/Messages"
+import OrderHistory from "./pages/OrderHistory"
+import Products from "./pages/Products"
+import SignIn from "./pages/SignIn"
 
 function App() {
-  const [token, setToken] = useState(null);
+  const [token, setToken] = useState(null)
 
   return (
     <TokenContext.Provider value={{ token, setToken }}>
@@ -28,7 +28,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </TokenContext.Provider>
-  );
+  )
 }
 
-export default App;
+export default App
