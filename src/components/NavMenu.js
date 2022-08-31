@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom"
 import "../styles.css"
+import "../index.css"
 import { AnimatePresence, motion, useCycle } from "framer-motion"
+import FeatherIcon from "feather-icons-react"
 // import TokenContext from "../context/TokenContext"
 // import { useContext } from "react"
 
@@ -31,15 +33,15 @@ export default function NavMenu() {
   const [open, cycleOpen] = useCycle(false, true)
 
   return (
-    <div className="bg-primary-400">
+    <div className="">
       <AnimatePresence>
         {open && (
           <motion.menu
-            className="flex flex-row"
+            className="flex "
             initial={{ width: 0, height: 0 }}
             animate={{
               width: 260,
-              height: "calc(90vh - 6rem)",
+              height: "calc(60vh - 6rem)",
             }}
             exit={{
               width: 0,
@@ -82,6 +84,7 @@ export default function NavMenu() {
               </motion.li>
               <motion.li whileHover={{ scale: 1.1 }} variants={itemVariants}>
                 <Link className="text-white" to="/signin">
+                  <i data-feather="feather"></i>
                   Sign in
                 </Link>
               </motion.li>
@@ -91,7 +94,7 @@ export default function NavMenu() {
       </AnimatePresence>
       <div className="btn-container">
         <button className="rounded-full" onClick={cycleOpen}>
-          {open ? "Close" : "Open"}
+          <FeatherIcon icon="align-right" />
         </button>
       </div>
     </div>
