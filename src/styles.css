@@ -1,6 +1,6 @@
 body {
-  background-color: #1a0554;
-  font-family: "Roboto", sans-serif;
+  background-color: #9576f6;
+  font-family: "Nunito", sans-serif;
 }
 
 main {
@@ -8,7 +8,7 @@ main {
 }
 
 aside {
-  background-color: #c4a8ff;
+  background-color: #d9d9d9;
   width: 18.75rem;
   height: 100vh;
 }

@@ -1,7 +1,7 @@
-import "../styles.css";
-import React from "react";
-import { AnimatePresence, motion, useCycle } from "framer-motion";
-import { Link } from "react-router-dom";
+import "../styles.css"
+import React from "react"
+import { AnimatePresence, motion, useCycle } from "framer-motion"
+
 const links = [
   { name: "Home", to: "/", id: 1 },
   { name: "Order History", to: "/orderHistory", id: 2 },
@@ -9,14 +9,14 @@ const links = [
   { name: "Products", to: "/products", id: 4 },
   { name: "Customers", to: "/customers", id: 5 },
   { name: "Sign In", to: "/signIn", id: 6 },
-];
+]
 
 const itemVariants = {
   closed: {
     opacity: 0,
   },
   open: { opacity: 1 },
-};
+}
 
 const sideVariants = {
   closed: {
@@ -31,10 +31,10 @@ const sideVariants = {
       staggerDirection: 1,
     },
   },
-};
+}
 
 export default function BurgerNav() {
-  const [open, cycleOpen] = useCycle(false, true);
+  const [open, cycleOpen] = useCycle(false, true)
 
   return (
     <main>
@@ -75,5 +75,5 @@ export default function BurgerNav() {
         <button onClick={cycleOpen}>{open ? "Close" : "Open"}</button>
       </div>
     </main>
-  );
+  )
 }

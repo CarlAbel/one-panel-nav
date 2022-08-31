@@ -17,22 +17,25 @@ export default function Products() {
       .then((data) => setProducts(data))
   }, [])
   return (
-    <div>
-      <h1>Products</h1>
+    <div className="bg-primary-100">
+      <h1 className="text-white">Products</h1>
 
-      <article>
+      <article className="p-8">
         {products.map((product) => (
-          <div className="w-60 bg-primary-400">
-            <div>
-              <h1 className="text-white">
+          <div className="rounded-3xl w-74 h-72 p-4 bg-primary-400  mb-12">
+            <div className="flex flex-col">
+              <h1 className="text-white">Ean-number: #{product.eanNumber}</h1>
+              <h2 className="text-white">
                 Product Name: {product.brand} {product.productName}
-              </h1>
-              <p>{product.productCategory}</p>
-              <p>{product.productDesc}</p>
-              <p>{product.stock}</p>
-              <div className="">
-                <p>{product.price}</p>
-                <p>{product.retailPrice}</p>
+              </h2>
+              <p className="text-white">{product.productCategory}</p>
+              <p className="lineBreak text-white">{product.productDesc}</p>
+              <p className="text-white self-center ">
+                Stock count: {product.stock}
+              </p>
+              <div className="flex justify-between">
+                <p className="text-white pt-8">{product.price}</p>
+                <p className="text-white pt-8">{product.retailPrice}</p>
               </div>
             </div>
           </div>
