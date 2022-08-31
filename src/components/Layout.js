@@ -35,14 +35,18 @@ export default function Layout() {
       <AnimatePresence>
         {open && (
           <motion.menu
-            initial={{ width: 0 }}
+            className="flex flex-row"
+            initial={{ width: 0, height: 0 }}
             animate={{
               width: 260,
+              height: "calc(90vh - 6rem)",
             }}
             exit={{
               width: 0,
-              transition: { delay: 0.3, duration: 0 },
+              height: 0,
+              transition: { delay: 0.7, duration: 0 },
             }}
+            // className="fixed top-0 left-0"
           >
             <motion.div
               className="container"
@@ -86,7 +90,9 @@ export default function Layout() {
         )}
       </AnimatePresence>
       <div className="btn-container">
-        <button onClick={cycleOpen}>{open ? "Close" : "Open"}</button>
+        <button className="rounded-full" onClick={cycleOpen}>
+          {open ? "Close" : "Open"}
+        </button>
       </div>
       <main>
         <Outlet />

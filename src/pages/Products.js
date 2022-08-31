@@ -18,8 +18,9 @@ export default function Products() {
   }, [])
   return (
     <div className="bg-primary-100">
-      <h1 className="text-white">Products</h1>
-
+      <div className="flex flex-col">
+        <h1 className="text-white self-center pt-24 text-4xl">Products</h1>
+      </div>
       <article className="p-8">
         {products.map((product) => (
           <div className="rounded-3xl w-74 h-72 p-4 bg-primary-400  mb-12">

@@ -4,7 +4,7 @@ body {
 }
 
 main {
-  display: flex;
+  display: block;
 }
 
 aside {
@@ -19,6 +19,8 @@ aside {
 
 .btn-container {
   position: fixed;
+  top: 0;
+  right: 0;
 }
 
 .container a {
