@@ -82,7 +82,7 @@ export default function Layout() {
               </motion.li>
               <motion.li whileHover={{ scale: 1.1 }} variants={itemVariants}>
                 <Link className="text-white" to="/signin">
-                  Signin
+                  Sign in
                 </Link>
               </motion.li>
             </motion.div>
