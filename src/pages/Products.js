@@ -15,7 +15,7 @@ export default function Products() {
       .then((res) => res.json())
 
       .then((data) => setProducts(data))
-  })
+  }, [])
   return (
     <div className="bg-primary-100">
       <div className="flex flex-col">

@@ -15,7 +15,7 @@ export default function Products() {
       .then((res) => res.json())
 
       .then((data) => setProducts(data))
-  })
+  }, [])
   return (
     <div className="bg-primary-100">
       <div className="flex flex-col">
@@ -32,9 +32,11 @@ export default function Products() {
               </h2>
               <p className="text-white">{product.productCategory}</p>
               <p className="lineBreak text-white">{product.productDesc}</p>
-              <p className="text-white self-center ">
+
+              <p className="text-white self-center  solidBorderB ">
                 Stock count: {product.stock}
               </p>
+
               <div className="flex justify-between">
                 <p className="text-white pt-8">{product.price}</p>
                 <p className="text-white pt-8">{product.retailPrice}</p>
