@@ -1,18 +1,3 @@
-body {
-  background-color: #9576f6;
-  font-family: "Nunito", sans-serif;
-}
-
-main {
-  display: block;
-}
-
-aside {
-  background-color: #d9d9d9;
-  width: 18.75rem;
-  height: 100vh;
-}
-
 .container {
   margin: 4.5rem 1.4rem;
 }
@@ -31,11 +16,10 @@ aside {
   display: block;
   margin: 20px;
 }
-
-button {
-  cursor: pointer;
-  margin: 1.25rem;
-  border: none;
-  padding: 0.5rem 1rem;
-  background-color: #f9fafb;
+.lineBreak {
+  padding-bottom: 3rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }

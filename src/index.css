@@ -2,10 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-.lineBreak {
-  padding-bottom: 3rem;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
+body {
+  background-color: #9576f6;
+  font-family: "Nunito", sans-serif;
+}
+
+main {
+  display: block;
+}
+
+aside {
+  background-color: #d9d9d9;
+  width: 18.75rem;
+  height: 100vh;
+}
+button {
+  cursor: pointer;
+  margin: 1.25rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  background-color: #f9fafb;
 }
