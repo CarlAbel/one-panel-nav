@@ -23,7 +23,10 @@ export default function Products() {
       </div>
       <article className="p-8">
         {products.map((product) => (
-          <div className="rounded-3xl w-74 h-72 p-4 bg-primary-400  mb-12">
+          <div
+            className="rounded-3xl w-74 h-72 p-4 bg-primary-400  mb-12"
+            key={product.id}
+          >
             <div className="flex flex-col">
               <div className="flex justify-between solidBorderB pb-2 ">
                 <div>
