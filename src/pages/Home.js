@@ -1,15 +1,15 @@
 import React from 'react'
-import Charts from "../pages/Charts";
 import "./Home.css"
 import logo from '../images/logo.png'
 import ME from '../images/profile.png'
+import BarChart from './Charts/BarChart'
 
 
 
 
 const Home = () => {
   return (
-    <div>
+    <div className="">
       <div>
         <img src={logo} alt="" className="w-36 pt-10 pl-3" />
       </div>
@@ -19,7 +19,21 @@ const Home = () => {
           <strong className="font-extrabold text-black">ADAM CHATILA</strong>
           <p className="ml-2 text-gray-400">@adam1234</p> 
         </div>
-        <Charts/>
+      </div>
+      <div>
+        <BarChart/>
+      </div>
+
+      <div className="lex justify-center">
+        <h1 className="flex justify-center  text-white font-extrabold pl-28 pt-10 ">Setting Management</h1>
+        <div>
+          <div><img src="" alt="" /></div>
+          <div><img src="" alt="" /></div>
+        </div>
+        <div>
+          <div><img src="" alt="" /></div>
+          <div><img src="" alt="" /></div>
+        </div>
       </div>
     
     </div>
