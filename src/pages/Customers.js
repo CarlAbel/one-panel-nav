@@ -1,10 +1,11 @@
-import { useEffect, useState, useContext } from "react"
-import TokenContext from "../context/TokenContext"
+import { useEffect, useState, useContext } from "react";
+import TokenContext from "../context/TokenContext";
+import FeatherIcon from "feather-icons-react";
 
 export default function Customers() {
-  const [users, setUsers] = useState([])
+  const [users, setUsers] = useState([]);
 
-  const { token } = useContext(TokenContext)
+  const { token } = useContext(TokenContext);
 
   useEffect(function () {
     fetch("http://localhost:3001/users", {
@@ -14,8 +15,8 @@ export default function Customers() {
     })
       .then((res) => res.json())
 
-      .then((data) => setUsers(data))
-  }, [])
+      .then((data) => setUsers(data));
+  }, []);
 
   return (
     <div className="bg-primary-100">
@@ -26,10 +27,10 @@ export default function Customers() {
         {users.map((user) => (
           <div
             key={user.userId}
-            className="rounded-3xl w-74 h-72 p-4 bg-primary-400  mb-12"
+            className="rounded-3xl w-74 h-60 p-4 bg-primary-400  mb-12 shadow-xl"
           >
             <div className="flex flex-col">
-              <div className="flex justify-between solidBorderB pb-2 ">
+              <div className="flex justify-between solidBorderB pb-2">
                 <div>
                   <h1 className="text-white pb-2">
                     Full name: {user.userName}
@@ -43,24 +44,37 @@ export default function Customers() {
                 </img>
               </div>
               <div className="flex items-center gap-4">
-                <div>
+                <div className="pb-2">
                   <h2 className="text-white pt-1">Email: {user.userEmail}</h2>
                   <p className="text-white text-xs capitalize">
                     Phone-Number: {user.phone}
                   </p>
                 </div>
               </div>
-              <p className="text-white self text-sm  ">
-                Stock count: {user.address.country}
-              </p>
               <div className="flex justify-between">
-                <p className="text-white pt-6 pl-4">$ {user.userName}</p>
-                <p className="text-white pt-6 pr-4">$ {user.userName}</p>
+                <div>
+                  <p className="text-white self text-sm  ">
+                    Country: {user.address.country}
+                  </p>
+                  <p className="text-white self text-sm  ">
+                    City: {user.address.city}
+                  </p>
+                  <p className="text-white self text-sm  ">
+                    Address: {user.address.street}
+                  </p>
+                  <p className="text-white self text-sm  ">
+                    Zip: {user.address.zip}
+                  </p>
+                </div>
+                <div className="text-white flex flex-col justify-between pt-1 pb-1">
+                  <FeatherIcon icon="edit" />
+                  <FeatherIcon icon="delete" />
+                </div>
               </div>
             </div>
           </div>
         ))}
       </article>
     </div>
-  )
+  );
 }
