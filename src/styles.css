@@ -18,6 +18,13 @@
   display: block;
   margin: 20px;
 }
+.lineBreak {
+  padding-bottom: 3rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
 .solidBorderB {
   border-bottom: solid 1px #ffffff;
 }
