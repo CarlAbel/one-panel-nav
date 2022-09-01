@@ -50,8 +50,8 @@ export default function Customers() {
                   </p>
                 </div>
               </div>
-              <p className="text-white self text-sm self-center solidBorderB pr-10 pl-4">
-                Stock count: {user.userName}
+              <p className="text-white self text-sm  ">
+                Stock count: {user.address.country}
               </p>
               <div className="flex justify-between">
                 <p className="text-white pt-6 pl-4">$ {user.userName}</p>
