@@ -30,7 +30,7 @@ export default function Products() {
                   <h1 className="text-white">
                     Ean-number: #{product.eanNumber}
                   </h1>
-                  <p className="text-white">
+                  <p className="text-white text-xs pt-2">
                     Product added: {product.productAdded}
                   </p>
                 </div>
