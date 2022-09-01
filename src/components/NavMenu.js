@@ -93,7 +93,7 @@ export default function NavMenu() {
       </AnimatePresence>
       <div className="btn-container">
         <button className="rounded-full" onClick={cycleOpen}>
-          <FeatherIcon icon="align-right" />
+          <FeatherIcon className="text-white" icon="align-right" />
         </button>
       </div>
     </div>
