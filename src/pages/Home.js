@@ -27,7 +27,7 @@ const Home = () => {
       <div className="lex justify-center">
         <h1 className="flex justify-center  text-white font-extrabold pl-28 pt-10 ">Setting Management</h1>
         <div>
-          <div><img src="" alt="" /></div>
+          <div><img src="" alt="" />helo</div>
           <div><img src="" alt="" /></div>
         </div>
         <div>
