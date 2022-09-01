@@ -34,12 +34,12 @@ export default function Products() {
                     Product added: {product.productAdded}
                   </p>
                 </div>
-                <img className="bg-primary-100 rounded-full w-12 h-12">
+                <img className="bg-primary-100 rounded-full w-12 h-12 p-6">
                   {product.image}
                 </img>
               </div>
               <div className="flex items-center gap-4">
-                <img className="bg-primary-100 rounded-full w-12 h-12 p-6 ">
+                <img className="bg-primary-100 rounded-full w-12 h-12 p-6">
                   {product.image}
                 </img>
                 <div>
