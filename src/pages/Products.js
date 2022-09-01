@@ -21,42 +21,53 @@ export default function Products() {
       <div className="flex flex-col">
         <h1 className="text-white self-center pt-24 text-4xl">Products</h1>
       </div>
-
-      <article className="p-6">
+      <article className="p-8">
         {products.map((product) => (
-          <div className="rounded-3xl w-74 h-72 p-4 bg-primary-400  mb-12">
+          <div
+            className="rounded-3xl w-74 h-72 p-4 bg-primary-400  mb-12"
+            key={product.id}
+          >
             <div className="flex flex-col">
-              <h1 className="text-white">Ean-number: #{product.eanNumber}</h1>
-              <h2 className="text-white">
-                Product Name: {product.brand} {product.productName}
-              </h2>
-              <p className="text-white">{product.productCategory}</p>
-              <p className="lineBreak text-white">{product.productDesc}</p>
-              <p className="text-white self-center ">
+              <div className="flex justify-between solidBorderB pb-2 ">
+                <div>
+                  <h1 className="text-white">
+                    Ean-number: #{product.eanNumber}
+                  </h1>
+                  <p className="text-white text-xs pt-2">
+                    Product added: {product.productAdded}
+                  </p>
+                </div>
+                <img className="bg-primary-100 rounded-full w-12 h-12 p-6">
+                  {product.image}
+                </img>
+              </div>
+              <div className="flex items-center gap-4">
+                <img className="bg-primary-100 rounded-full w-12 h-12 p-6">
+                  {product.image}
+                </img>
+                <div>
+                  <h2 className="text-white pb-2 pt-1">
+                    Product: {product.brand} {product.productName}
+                  </h2>
+                  <p className="text-white text-xs capitalize">
+                    {" "}
+                    Categories: {product.productCategory}
+                  </p>
+                  <p className="lineBreak text-white text-xs">
+                    {product.productDesc}
+                  </p>
+                </div>
+              </div>
+              <p className="text-white self text-sm self-center solidBorderB pr-10 pl-4">
                 Stock count: {product.stock}
               </p>
               <div className="flex justify-between">
-                <p className="text-white pt-8">{product.price}</p>
-                <p className="text-white pt-8">{product.retailPrice}</p>
+                <p className="text-white pt-6 pl-4">$ {product.price}</p>
+                <p className="text-white pt-6 pr-4">$ {product.retailPrice}</p>
               </div>
             </div>
           </div>
         ))}
-
-        {/* <p>DATE ADDED</p>
-
-        {products.map((product) => (
-          <li className="text-white">{product.productName} Product Name: </li>
-        ))}
-
-        <i>Line</i>
-        {products.map((product) => (
-          <h1 className="text-white">{product.productName} Product Name: </h1>
-        ))}
-
-        {products.map((product) => (
-          <p className="text-white">{product.brand}</p>
-        ))} */}
       </article>
     </div>
   )

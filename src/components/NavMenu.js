@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom"
-import "../styles.css"
-import "../index.css"
-import { AnimatePresence, motion, useCycle } from "framer-motion"
-import FeatherIcon from "feather-icons-react"
+import { Link } from "react-router-dom";
+import "../styles.css";
+import "../index.css";
+import { AnimatePresence, motion, useCycle } from "framer-motion";
+import FeatherIcon from "feather-icons-react";
 // import TokenContext from "../context/TokenContext"
 // import { useContext } from "react"
 
@@ -11,7 +11,7 @@ const itemVariants = {
     opacity: 0,
   },
   open: { opacity: 1 },
-}
+};
 
 const sideVariants = {
   closed: {
@@ -26,11 +26,11 @@ const sideVariants = {
       staggerDirection: 1,
     },
   },
-}
+};
 export default function NavMenu() {
   // const { token } = useContext(TokenContext)
 
-  const [open, cycleOpen] = useCycle(false, true)
+  const [open, cycleOpen] = useCycle(false, true);
 
   return (
     <div className="">
@@ -84,7 +84,6 @@ export default function NavMenu() {
               </motion.li>
               <motion.li whileHover={{ scale: 1.1 }} variants={itemVariants}>
                 <Link className="text-white" to="/signin">
-                  <i data-feather="feather"></i>
                   Sign in
                 </Link>
               </motion.li>
@@ -98,5 +97,5 @@ export default function NavMenu() {
         </button>
       </div>
     </div>
-  )
+  );
 }
