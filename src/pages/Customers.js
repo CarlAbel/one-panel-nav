@@ -1,11 +1,11 @@
-import { useEffect, useState, useContext } from "react";
-import TokenContext from "../context/TokenContext";
-import FeatherIcon from "feather-icons-react";
+import { useEffect, useState, useContext } from "react"
+import TokenContext from "../context/TokenContext"
+import FeatherIcon from "feather-icons-react"
 
 export default function Customers() {
-  const [users, setUsers] = useState([]);
+  const [users, setUsers] = useState([])
 
-  const { token } = useContext(TokenContext);
+  const { token } = useContext(TokenContext)
 
   useEffect(function () {
     fetch("http://localhost:3001/users", {
@@ -15,8 +15,8 @@ export default function Customers() {
     })
       .then((res) => res.json())
 
-      .then((data) => setUsers(data));
-  }, []);
+      .then((data) => setUsers(data))
+  }, [])
 
   return (
     <div className="bg-primary-100">
@@ -76,5 +76,5 @@ export default function Customers() {
         ))}
       </article>
     </div>
-  );
+  )
 }

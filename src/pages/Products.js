@@ -1,10 +1,11 @@
-import { useEffect, useState, useContext } from "react";
-import TokenContext from "../context/TokenContext";
+import { useEffect, useState, useContext } from "react"
+import TokenContext from "../context/TokenContext"
+import FeatherIcon from "feather-icons-react"
 
 export default function Products() {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState([])
 
-  const { token } = useContext(TokenContext);
+  const { token } = useContext(TokenContext)
 
   useEffect(function () {
     fetch("http://localhost:3001/products", {
@@ -14,8 +15,8 @@ export default function Products() {
     })
       .then((res) => res.json())
 
-      .then((data) => setProducts(data));
-  }, []);
+      .then((data) => setProducts(data))
+  }, [])
   return (
     <div className="bg-primary-100">
       <div className="flex flex-col">
@@ -57,6 +58,12 @@ export default function Products() {
                     {product.productDesc}
                   </p>
                 </div>
+                <div className="flex justify-between">
+                  <div className="text-white flex flex-col justify-between pt-1 pb-1">
+                    <FeatherIcon icon="edit" />
+                    <FeatherIcon icon="delete" />
+                  </div>
+                </div>
               </div>
               <p className="text-white self text-sm self-center solidBorderB pr-10 pl-4">
                 Stock count: {product.stock}
@@ -70,5 +77,5 @@ export default function Products() {
         ))}
       </article>
     </div>
-  );
+  )
 }
