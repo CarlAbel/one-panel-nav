@@ -1,12 +1,12 @@
-import { useContext } from "react";
-import TokenContext from "../context/TokenContext";
-import logo from "../images/simple.png";
+import { useContext } from "react"
+import TokenContext from "../context/TokenContext"
+import logo from "../images/simple.png"
 
 export default function SignIn() {
-  const { setToken } = useContext(TokenContext);
+  const { setToken } = useContext(TokenContext)
 
   function submitHandler(event) {
-    event.preventDefault();
+    event.preventDefault()
 
     fetch("http://localhost:3001/auth", {
       method: "POST",
@@ -23,7 +23,7 @@ export default function SignIn() {
     })
       .then((res) => res.json())
 
-      .then((data) => setToken(data.token));
+      .then((data) => setToken(data.token))
   }
   return (
     <div className="flex flex-col items-center">
@@ -42,7 +42,6 @@ export default function SignIn() {
             />
           </label>
         </div>
-
         <div>
           <label className="flex flex-col items-center">
             <h3 className="text-white font-semibold shadow-xl">Password</h3>
@@ -63,5 +62,5 @@ export default function SignIn() {
         </div>
       </form>
     </div>
-  );
+  )
 }

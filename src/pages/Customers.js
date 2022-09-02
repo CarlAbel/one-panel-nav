@@ -1,6 +1,8 @@
 import { useEffect, useState, useContext } from "react"
 import TokenContext from "../context/TokenContext"
 import FeatherIcon from "feather-icons-react"
+import logo from "../images/logo.png"
+import ME from "../images/profile.png"
 
 export default function Customers() {
   const [users, setUsers] = useState([])
@@ -20,8 +22,18 @@ export default function Customers() {
 
   return (
     <div className="bg-primary-100">
+      <div>
+        <img src={logo} alt="" className="w-40 pt-10 pl-3" />
+      </div>
+      <div className="flex items-center pt-8 pl-2 ">
+        <img src={ME} alt="profile-img" className="w-[44px] " />
+        <div className="flex-col ml-2 mt-3">
+          <strong className="font-bold text-black text-sm">ADAM CHATILA</strong>
+          <p className="ml-2 text-gray-400 text-xs">@adam1234</p>
+        </div>
+      </div>
       <div className="flex flex-col">
-        <h1 className="text-white self-center pt-24 text-4xl">Customers</h1>
+        <h1 className="text-white self-center pt-8 text-4xl">Customers</h1>
       </div>
       <article className="p-8">
         {users.map((user) => (

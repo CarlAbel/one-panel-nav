@@ -16,7 +16,7 @@ const Home = () => {
       <div>
         <img src={logo} alt="" className="w-40 pt-10 pl-3" />
       </div>
-      <div className="flex items-center pt-12 pl-2 ">
+      <div className="flex items-center pt-8 pl-2 ">
         <img src={ME} alt="profile-img" className="w-[44px] " />
         <div className="flex-col ml-2 mt-3">
           <strong className="font-bold text-black text-sm">ADAM CHATILA</strong>
