@@ -51,7 +51,7 @@ export default function Customers() {
                     Customer joined: {user.joined}
                   </p>
                 </div>
-                <img className="bg-primary-100 rounded-full w-12 h-12 p-6">
+                <img className="bg-primary-300 rounded-full w-12 h-12 p-6">
                   {user.image}
                 </img>
               </div>

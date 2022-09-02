@@ -54,7 +54,7 @@ export default function Products() {
                   <img
                     src={ME}
                     alt="customer profile"
-                    className="z-10 bg-primary-100 rounded-full w-12 h-12 p-6"
+                    className="z-10 bg-primary-300 rounded-full w-12 h-12 p-6"
                   >
                     {product.image}
                   </img>
@@ -64,7 +64,7 @@ export default function Products() {
                 <img
                   src={ME}
                   alt="product image"
-                  className="bg-primary-100 rounded-full w-12 h-12 p-6"
+                  className="bg-primary-300 rounded-full w-12 h-12 p-6"
                 >
                   {product.image}
                 </img>
